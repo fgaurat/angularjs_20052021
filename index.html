@@ -4,32 +4,22 @@
 
     
     <script src="node_modules/angular/angular.js"></script>
-    <script src="app.js"></script>
+
+    <script src="app/app.module.js"></script>
+    <script src="app/todo-list/todo-list.module.js"></script>
+    <script src="app/todo-list/todo-list.controller.js"></script>
+    <script src="app/todo-list/todo-list.directive.js"></script>
+
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
   </head>
   <body>
 
     <div ng-controller="TodosController">
         <h1>{{title}}</h1>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>title</th>
-              <th>completed</th>
-              <th>dueDate</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr ng-repeat="todo in todos">
-                <td>{{todo.id}}</td>
-                <td>{{todo.title}}</td>
-                <td>{{todo.completed}}</td>
-                <td>{{todo.dueDate}}</td>
-            </tr>
-          </tbody>
-        </table>
+        <todo-list></todo-list>
     </div>
+
+
+
   </body>
 </html>

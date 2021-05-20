@@ -1,8 +1,4 @@
-let todosApp = angular.module('todosApp',[])
-
-
-
-todosApp.controller('TodosController',function($scope){
+angular.module('todoList').controller('TodosController',function($scope){
     $scope.title="Todolist App !"
 
     const todos = [
