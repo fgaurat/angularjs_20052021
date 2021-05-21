@@ -5,7 +5,7 @@ angular.module('todoList').controller('TodosController',function($scope){
         {
             "userId": 1,
             "id": 5,
-            "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
+            "title": "Todo laboriosam mollitia et enim quasi adipisci quia provident illum",
             "completed": false,
             "dueDate":1582620058000
           },
