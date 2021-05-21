@@ -11,12 +11,18 @@
     <script src="app/todo-list/todo-list.component.js"></script>
     <script src="app/todo-list/add.services.js"></script>
     <script src="app/todo-list/add.component.js"></script>
+    <script src="app/todo-list/thedate.component.js"></script>
     <script src="app/todo-list/todo-item.directive.js"></script>
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
   </head>
   <body>
+    <div ng-controller="TodosController as todosCtrl">
+      le titre : {{todosCtrl.title}}
+    </div>
 
+    <the-date></the-date>
+    <hr>
     <todo-add></todo-add>
     <hr>
     <todo-list></todo-list>
